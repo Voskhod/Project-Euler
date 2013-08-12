@@ -1,7 +1,7 @@
 from math import *
 
 def is_prime(num): 
-	sqrt_nr = ceil(sqrt(num))
+	sqrt_nr = ceil(num ** 0.5)
 	i = 2
 	while i <= sqrt_nr:
 		if not num % i and i != num:
@@ -26,5 +26,5 @@ prime = 3
 while i < 10001:
 	prime = find_next_prime(prime)
 	i = i + 1
-print " Prime %d is %d\n" % (i, prime)
+	print " Prime %d is %d\n" % (i, prime)
 
